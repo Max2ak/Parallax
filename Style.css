@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-
+@font-face {
+  font-family: "CustomFont";
+  src: url(Font/NorseBold-2Kge.otf) format(open);
+}
 *{
   margin: 0;
   padding: 0;
@@ -8,6 +11,15 @@
 body{
   background: #0a2a43;
   min-height: 1500px;
+}
+section:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#0a2a43, transparent );
+  z-index: 10000;
 }
 section{
   position: relative;
@@ -26,4 +38,60 @@ section img{
   height: 100%;
   object-fit: cover;
   pointer-events: none;
+}
+.Welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.content-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  color: #fff;
+}
+.content-table div{
+  margin: 5vh;
+}
+.content-table h2{
+  display: flex;
+  justify-content: center;
+}
+.content-table p{
+  display: flex;
+  justify-content: center;
+  width: 50vh;
+}
+.content-table img{
+  display: flex;
+  width: 50vh;
+  height: 75%;
+}
+
+#text {
+  position: relative;
+  color: #fff;
+  width: 100vh;
+  height: 100vh;
+  font-size: 10em;
+  z-index: 1;
+}
+#text2{
+  margin-top: 10vh;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  justify-content: center;
+}
+#text3{
+  margin: 10vh;
+  margin-top: 1vh;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10% ;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  justify-self: center;
 }

@@ -5,21 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <script src="Script.js"></script>
     <title>Valheim</title>
 </head>
 <body>
     <section>
-        <img src="Pics-valheim/Layer 0.png" alt="bg">
-        <img src="Pics-valheim/Layer 8.png" alt="moon">
-        <img src="Pics-valheim/Layer 7.png" alt="mountain">
-        <img src="Pics-valheim/Layer 6.png" alt="road">
-        <img src="Pics-valheim/Layer 5.png" alt="moon">
-        <img src="Pics-valheim/Layer 4.png" alt="moon">
-        <img src="Pics-valheim/Layer 3.png" alt="moon">
-        <img src="Pics-valheim/Layer 2.png" alt="moon">
-        <img src="Pics-valheim/Layer 1.png" alt="moon">
-        <h2 id="text">Moon Light</h2>
+        <img src="Pics-valheim/Layer 0.png" id="0">
+        <img src="Pics-valheim/Layer 8.png" id="8">
+        <img src="Pics-valheim/Layer 7.png" id="7">
+        <img src="Pics-valheim/Layer 6.png" id="6">
+        <img src="Pics-valheim/Layer 5.png" id="5">
+        <img src="Pics-valheim/Layer 4.png" id="4">
+        <img src="Pics-valheim/Layer 3.png" id="3">
+        <img src="Pics-valheim/Layer 2.png" id="2">
+        <img src="Pics-valheim/Layer 1.png" id="1">
+        <img id="text" src="Pics-valheim/Logo.png" alt="Logo">
     </section>
+    
+    <div class="Welcome">
+        <h2 id="text2">Welcome to Valheim!</h2>
+        <p id="text3">The valkyries have ferried your soul to the tenth norse world as a custodian, where you must adventure to
+        the ends of
+        the realm, from the deepest forest to the highest mountain peak, slaying beasts of myth and legend feared by Odin
+        himself. You will craft powerful weapons, build unyielding castles and sail longships towards the horizon to prove
+        yourself to the Allfather, and certainly die trying!</p>
+    </div>    
+    
+    <div class="content-table">
+        <div><img src="Pics-valheim/Explore.png" alt=""><h2>Explore</h2><p>A beautiful, procedurally-generated world awaits you. Venture into deep dark forests, climb snow-peaked mountains and
+        marvel at lush valleys. Take to the seas on a mighty longship, but be wary of sailing too far...</p></div>
+        <div><img src="Pics-valheim/Build.png" alt=""><h2>Build</h2><p>Raise your own viking mead halls, houses, castles, and more with our powerful construction interface. From knarrs to
+        imposing warships, build legendary vessels to conquer the seas and discover new lands.</p></div>
+        <div><img src="Pics-valheim/Conquer.png" alt=""><h2>Conquer</h2><p>Battle the mythical beasts of the tenth world and animal wildlife in punishing dodge & block based combat.</p></div>
+        <div><img src="Pics-valheim/Craft.png" alt=""><h2>Craft</h2><p>Forge increasingly powerful weapons and armour as you advance. Craft food and mead to maintain your health.
+</p></div>
+        <div><img src="Pics-valheim/Survive.png" alt=""><h2>Survive</h2><p>From the highest mountain peak to the deepest swamp, each environment presents unique challenges and foes.
+</p></div>
+        <div><img src="Pics-valheim/Cooperate.png" alt=""><h2>Cooperate</h2><p>Valheim supports independent, player-hosted servers and as many worlds as you wish to create, because no one wants to
+        continuously die alone.
+</p></div>
+    </div>
+
+    <div>
+        <video width="320" height="240" controls>
+            <source src="Vid-valheim/Sneak_attack.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("0");
+        let bg1 = document.getElementById("1");
+        let bg2 = document.getElementById("2");
+        let bg3 = document.getElementById("3");
+        let bg4 = document.getElementById("4");
+        let bg5 = document.getElementById("5");
+        let bg6 = document.getElementById("6");
+        let bg7 = document.getElementById("7");
+        let bg8 = document.getElementById("8");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            bg1.style.top = value * 0.1 + 'px';
+            bg2.style.top = value * 0.1 + 'px';
+            bg3.style.top = value * 0.1+ 'px';
+            bg4.style.top = value * 0.1 + 'px';
+            bg5.style.top = value * 0.15 + 'px';
+            bg6.style.top = value * 0.2 + 'px';
+            bg7.style.top = value * 0.3 + 'px';
+            bg8.style.top = value * 0.4 + 'px';
+        })
+    </script>
 </body>
 </html>
